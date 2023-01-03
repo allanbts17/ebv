@@ -1,0 +1,20 @@
+{
+	"color": "#ffff0000",
+	"description": "",
+	"display_name": "Elías",
+	"display_name_bool": true,
+	"id": "character-1626439007.json",
+	"mirror_portraits": false,
+	"name": "Elias",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": -250,
+	"offset_y": -270,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://recursos/Personajes/complete/Elias.png"
+		}
+	],
+	"scale": 60
+}

@@ -1,0 +1,87 @@
+{
+    "1" : {
+	"1" : {
+	"tipo" : "Identifica el rostro",
+	"rostro" : "Moisés joven"
+	},
+	"2" : {
+	"tipo" : "Opción múltiple",
+	"pregunta" : "¿A quién conoció en el desierto Moisés?",
+	"opciones" : ["Jetro ",
+			"Faraón ",
+			"Dios ",
+			"Mamá "],
+	"respuesta" : 1
+	}
+    },
+    "2" : {
+	"1" : {
+	"tipo" : "Completa",
+	"pregunta" : "La zarza que vió Moisés estaba ______",
+	"opciones" : ["Mojada ",
+			"Caliente ",
+			"Ardiente ",
+			"Seca"],
+	"respuesta" : 3
+	},
+	"2" : {
+	"tipo" : "Ordena la palabra",
+	"pregunta" : "Valor que puso en práctica Moisés",
+	"desorden" : "SOTÓPIRPO",
+	"orden" : "PROPÓSITO"
+	}
+    },
+    "3" : {
+	"1" : {
+	"tipo" : "Opción múltiple",
+	"pregunta" : "¿Quién es el GRAN YO SOY? ",
+	"opciones" : ["Jehová ",
+			"Moisés ",
+			"Faraón ",
+			"Jesús "],
+	"respuesta" : 1
+	},
+	"2" : {
+	"tipo" : "Pareo",
+	"izquierda" : ["Príncipe", "Dios", "Valor", "Monte", "Sacerdote"],
+	"derecha" : ["Moisés", "Zarza", "Propósito", "Horeb", "Jetro"]
+	}
+    },
+    "4" : {
+	"1" : {
+	"tipo" : "Completa",
+	"pregunta" : "Moisés era príncipe de _________",
+	"opciones" : ["Nilo",
+			"Madián ",
+			"Israel ",
+			"Egipto "],
+	"respuesta" : 4
+	},
+	"2" : {
+	"tipo" : "Ordena la palabra",
+	"pregunta" : "Sacerdote de Madián",
+	"desorden" : "TEROJ",
+	"orden" : "JETRO"
+	}
+    },
+    "5" : {
+	"1" : {
+	"tipo" : "Completa",
+	"pregunta" : "El propósito de Moisés era liberar al pueblo de ________",
+	"opciones" : ["Egipto",
+			"Israel",
+			"Madián",
+			"Dios"],
+	"respuesta" : 2
+	},
+	"2" : {
+	"tipo" : "Opción múltiple",
+	"pregunta" : "¿Quién dijo YO SOY EL QUE SOY?",
+	"opciones" : ["Dios",
+			"Moisés",
+			"Faraón",
+			"Abraham "],
+	"respuesta" : 1
+	}
+    }
+}

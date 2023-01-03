@@ -1,0 +1,28 @@
+{
+	"color": "#ffffffff",
+	"description": "",
+	"display_name": "Pipe",
+	"display_name_bool": true,
+	"id": "character-1626441953.json",
+	"mirror_portraits": false,
+	"name": "PipeGrande",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 250,
+	"offset_y": -80,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://recursos/Personajes/Pipe/Pipe - Manos Abajo.png"
+		},
+		{
+			"name": "saludo",
+			"path": "res://recursos/Personajes/Pipe/Pipe - Mano Izquierda Arriba.png"
+		},
+		{
+			"name": "emocion",
+			"path": "res://recursos/Personajes/Pipe/Pipe - Manos Arriba.png"
+		}
+	],
+	"scale": 37
+}

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/libre.ogg-9ba5bcd7c555f64ba63dd2f09e4b019e.oggstr"
+
+[deps]
+
+source_file="res://recursos/music/libre.ogg"
+dest_files=[ "res://.import/libre.ogg-9ba5bcd7c555f64ba63dd2f09e4b019e.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

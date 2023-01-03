@@ -1,0 +1,89 @@
+{
+    "1" : {
+	"1" : {
+	"tipo" : "Pareo",
+	"izquierda" : ["Profeta", "Rey", "Valor", "Dios", "Monte"],
+	"derecha" : ["Elías", "Acab", "Confianza", "Lluvia", "Carmelo"]
+	},
+	"2" : {
+	"tipo" : "Ordena la palabra",
+	"pregunta" : "Reina que mandó matar a los profetas de Israel",
+	"desorden" : "BEAJEZL",
+	"orden" : "JEZABEL"
+	}
+    },
+    "2" : {
+	"1" : {
+	"tipo" : "Opción múltiple",
+	"pregunta" : " ¿Cuál era el Dios que adoraba Acab?",
+	"opciones" : ["Jehová",
+			"Baal",
+			"Satanás",
+			"Trueno"],
+	"respuesta" : 2
+	},
+	"2" : {
+	"tipo" : "Ordena la palabra",
+	"pregunta" : "¿Cómo se llama el sirviente de Acab?",
+	"desorden" : "DÍBASA",
+	"orden" : "ABDÍAS"
+	}
+    },
+    "3" : {
+	"1" : {
+	"tipo" : "Opción múltiple",
+	"pregunta" : "¿En qué monte se reunieron los profetas y Elías?",
+	"opciones" : ["Sinaí",
+			"Caramelo",
+			"Moriah",
+			"Carmelo"],
+	"respuesta" : 4
+	},
+	"2" : {
+	"tipo" : "Completa",
+	"pregunta" : "Los profetas pidieron una señal de _______ a Baal",
+	"opciones" : ["Sol",
+			"Fuego",
+			"Hielo",
+			"Lluvia"],
+	"respuesta" : 2
+	}
+    },
+    "4" : {
+	"1" : {
+	"tipo" : "Completa",
+	"pregunta" : "Si confío en Dios, no tengo ________",
+	"opciones" : ["Miedo",
+			"Alegría",
+			"Enojo",
+			"Paz"],
+	"respuesta" : 1
+	},
+	"2" : {
+	"tipo" : "Ordena la palabra",
+	"pregunta" : "¿Qué valor demostró Elías?",
+	"desorden" : "FANACIZON",
+	"orden" : "CONFIANZA"
+	}
+    },
+    "5" : {
+	"1" : {
+	"tipo" : "Opción múltiple",
+	"pregunta" : "¿Quién quería matar a Elías?",
+	"opciones" : ["Jezabel",
+			"Dios",
+			"Acab",
+			"Abdías"],
+	"respuesta" : 1
+	},
+	"2" : {
+	"tipo" : "Opción múltiple",
+	"pregunta" : "¿A quién mandó Dios para darle un mensaje a Acab?",
+	"opciones" : ["Abdías",
+			"Elías",
+			"Baal",
+			"Cuervo"],
+	"respuesta" : 2
+	}
+    }
+}

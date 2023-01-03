@@ -1,0 +1,74 @@
+{
+  "1": {
+    "1": {
+      "tipo": "Identifica el rostro",
+      "rostro": "Abraham"
+    },
+    "2": {
+      "tipo": "Opción múltiple",
+      "pregunta": "¿Qué significa El-Shaddai?",
+      "opciones": [
+        "Dios con nosotros",
+        "Dios maravilloso",
+        "Dios todopoderoso",
+        "Dios imponente"
+      ],
+      "respuesta": 3
+    }
+  },
+  "2": {
+    "1": {
+      "tipo": "Pareo",
+      "izquierda": ["Padre", "Hijo", "Montaña", "Valor", "Altar", "Promesa"],
+      "derecha": ["Abraham", "Issac", "Moriah", "Obediencia", "Carnero", "Dios"]
+    },
+    "2": {
+      "tipo": "Completa",
+      "pregunta": "Mientras Abraham estaba dormido, escuchó la voz de ______",
+      "opciones": ["Sara", "Dios", "Issac", "Abraham"],
+      "respuesta": 2
+    }
+  },
+  "3": {
+    "1": {
+      "tipo": "Ordena la palabra",
+      "pregunta": "Monte en el que Abraham iba a sacrificar a Issac.",
+      "desorden": "ROHIMA",
+      "orden": "MORIAH"
+    },
+    "2": {
+      "tipo": "Opción múltiple",
+      "pregunta": "En dónde se encuentra el versículo: Mantegámos firme, sin fluctuar, la profesión de nuestra profesión de nuestra esperanza, porque fiel es el que prometió.",
+      "opciones": ["Hebreos", "Hechos", "Génesis", "Filipenses"],
+      "respuesta": 1
+    }
+  },
+  "4": {
+    "1": {
+      "tipo": "Ordena la palabra",
+      "pregunta": "Valor que Abraham puso en práctica",
+      "desorden": "DIBEONEICA",
+      "orden": "OBEDIENCIA"
+    },
+    "2": {
+      "tipo": "Opción múltiple",
+      "pregunta": "¿Qué animal sacrificó Abraham?",
+      "opciones": ["Vaca", "Gallina", "Cordero", "Carnero"],
+      "respuesta": 4
+    }
+  },
+  "5": {
+    "1": {
+      "tipo": "Ordena la palabra",
+      "pregunta": "Material con el que se hizo el altar para el sacrificio.",
+      "desorden": "DERIPA",
+      "orden": "PIEDRA"
+    },
+    "2": {
+      "tipo": "Completa",
+      "pregunta": "Dios le dio un nombre nuevo a Abram a ________",
+      "opciones": ["Abraham ", "Abraám ", "Abrahm ", "Abram "],
+      "respuesta": 1
+    }
+  }
+}

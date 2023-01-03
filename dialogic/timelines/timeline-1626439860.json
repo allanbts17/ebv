@@ -1,0 +1,71 @@
+{
+	"events": [
+		{
+			"action": "join",
+			"character": "character-1626441953.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "emocion",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1626441953.json",
+			"event_id": "dialogic_001",
+			"portrait": "emocion",
+			"text": "¡Siii! Al fin llegamos a la cima de esta montaña."
+		},
+		{
+			"character": "character-1626441953.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Mira [name], es Moisés."
+		},
+		{
+			"action": "join",
+			"character": "character-1626439251.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "emocion",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			}
+		},
+		{
+			"character": "character-1626439251.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Saludos amigos, felicidades por llegar hasta acá."
+		},
+		{
+			"character": "character-1626439251.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Como premio les dejaré este mensaje:"
+		},
+		{
+			"character": "character-1626439251.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Por amor a Jesús siempre haré lo mejor."
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 0.2
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.3",
+		"file": "timeline-1626439860.json",
+		"name": "cimaMoisesViejo"
+	}
+}

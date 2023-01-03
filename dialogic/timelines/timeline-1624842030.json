@@ -1,0 +1,59 @@
+{
+	"events": [
+		{
+			"action": "join",
+			"character": "character-1626441953.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "saludo",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://recursos/sfx/saludoPipe.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1626441953.json",
+			"event_id": "dialogic_001",
+			"portrait": "saludo",
+			"text": "¡Hola, hola, hola! Bienvenido/a a Escalando Montañas."
+		},
+		{
+			"character": "character-1626441953.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "¿Cómo te llamas?"
+		},
+		{
+			"character": "character-1626441953.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "¿[name]? Yo me llamo Pipe. Vamos a vivir una experiencia divertida y de aprendizaje."
+		},
+		{
+			"character": "character-1626441953.json",
+			"event_id": "dialogic_001",
+			"portrait": "emocion",
+			"text": "¿Estás listo/a para llegar a la cima?"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 0.2
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.3",
+		"file": "timeline-1624842030.json",
+		"name": "PresentacionDePipe"
+	}
+}

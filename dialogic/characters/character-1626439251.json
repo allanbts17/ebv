@@ -1,0 +1,20 @@
+{
+	"color": "#fff1ff00",
+	"description": "",
+	"display_name": "Moisés viejo",
+	"display_name_bool": true,
+	"id": "character-1626439251.json",
+	"mirror_portraits": false,
+	"name": "MoisesViejo",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": -250,
+	"offset_y": -270,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://recursos/Personajes/complete/MoisesViejo.png"
+		}
+	],
+	"scale": 60
+}

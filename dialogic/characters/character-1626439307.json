@@ -1,0 +1,20 @@
+{
+	"color": "#ff0800ff",
+	"description": "",
+	"display_name": "Jesús",
+	"display_name_bool": true,
+	"id": "character-1626439307.json",
+	"mirror_portraits": false,
+	"name": "Jesus",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": -250,
+	"offset_y": -270,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://recursos/Personajes/complete/Jesus.png"
+		}
+	],
+	"scale": 60
+}

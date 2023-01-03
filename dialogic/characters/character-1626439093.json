@@ -1,0 +1,20 @@
+{
+	"color": "#ffff00e9",
+	"description": "",
+	"display_name": "Moisés joven",
+	"display_name_bool": true,
+	"id": "character-1626439093.json",
+	"mirror_portraits": false,
+	"name": "MoisesJoven",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": -250,
+	"offset_y": -270,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://recursos/Personajes/complete/MoisesJoven.png"
+		}
+	],
+	"scale": 60
+}

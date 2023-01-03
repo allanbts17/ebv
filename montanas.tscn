@@ -1,0 +1,316 @@
+[gd_scene load_steps=19 format=2]
+
+[ext_resource path="res://recursos/montanas/montana1.png" type="Texture" id=1]
+[ext_resource path="res://montanas.gd" type="Script" id=2]
+[ext_resource path="res://recursos/montanas/puntoAzul.png" type="Texture" id=3]
+[ext_resource path="res://trivia.tscn" type="PackedScene" id=4]
+[ext_resource path="res://recursos/montanas/montana3.png" type="Texture" id=5]
+[ext_resource path="res://recursos/montanas/montana2.png" type="Texture" id=6]
+[ext_resource path="res://recursos/montanas/montana4.png" type="Texture" id=7]
+[ext_resource path="res://recursos/montanas/montana6.png" type="Texture" id=8]
+[ext_resource path="res://recursos/fuentes/Boogaloo-Regular.ttf" type="DynamicFontData" id=9]
+[ext_resource path="res://recursos/montanas/titulo.png" type="Texture" id=10]
+[ext_resource path="res://recursos/montanas/leftArrow.png" type="Texture" id=11]
+[ext_resource path="res://recursos/montanas/rightArrow.png" type="Texture" id=12]
+[ext_resource path="res://recursos/principal/return.png" type="Texture" id=13]
+
+[sub_resource type="DynamicFont" id=1]
+size = 92
+font_data = ExtResource( 9 )
+
+[sub_resource type="Animation" id=2]
+resource_name = "dialogue_end"
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0.533333 ), Color( 0, 0, 0, 0 ) ]
+}
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 360, 640 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 50
+font_data = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 64
+outline_size = 5
+outline_color = Color( 0.0431373, 0.34902, 0.54902, 1 )
+font_data = ExtResource( 9 )
+
+[node name="vistaMontanas" type="Node2D"]
+script = ExtResource( 2 )
+scene = ExtResource( 4 )
+
+[node name="montanas" type="Node2D" parent="."]
+
+[node name="montana1" type="Node2D" parent="montanas"]
+
+[node name="fondo" type="Sprite" parent="montanas/montana1"]
+texture = ExtResource( 1 )
+centered = false
+
+[node name="puntoTrivia1" type="TouchScreenButton" parent="montanas/montana1"]
+position = Vector2( 41.7717, 1076.87 )
+normal = ExtResource( 3 )
+
+[node name="puntoTrivia2" type="TouchScreenButton" parent="montanas/montana1"]
+position = Vector2( 341.328, 998.26 )
+normal = ExtResource( 3 )
+
+[node name="puntoTrivia3" type="TouchScreenButton" parent="montanas/montana1"]
+position = Vector2( 472.61, 802.806 )
+normal = ExtResource( 3 )
+
+[node name="puntoTrivia4" type="TouchScreenButton" parent="montanas/montana1"]
+position = Vector2( 283.273, 646.706 )
+normal = ExtResource( 3 )
+
+[node name="puntoTrivia5" type="TouchScreenButton" parent="montanas/montana1"]
+position = Vector2( 285.535, 392.162 )
+normal = ExtResource( 3 )
+
+[node name="montana2" type="Node2D" parent="montanas"]
+position = Vector2( 720, 0 )
+
+[node name="fondo" type="Sprite" parent="montanas/montana2"]
+texture = ExtResource( 6 )
+centered = false
+
+[node name="puntoTrivia1" type="TouchScreenButton" parent="montanas/montana2"]
+position = Vector2( 103.202, 1088.86 )
+normal = ExtResource( 3 )
+
+[node name="puntoTrivia2" type="TouchScreenButton" parent="montanas/montana2"]
+position = Vector2( 402.26, 1010.5 )
+normal = ExtResource( 3 )
+
+[node name="puntoTrivia3" type="TouchScreenButton" parent="montanas/montana2"]
+position = Vector2( 532.044, 815.043 )
+normal = ExtResource( 3 )
+
+[node name="puntoTrivia4" type="TouchScreenButton" parent="montanas/montana2"]
+position = Vector2( 342.954, 658.692 )
+normal = ExtResource( 3 )
+
+[node name="puntoTrivia5" type="TouchScreenButton" parent="montanas/montana2"]
+position = Vector2( 345.718, 405.145 )
+normal = ExtResource( 3 )
+
+[node name="montana3" type="Node2D" parent="montanas"]
+position = Vector2( 1440, 0 )
+
+[node name="fondo" type="Sprite" parent="montanas/montana3"]
+texture = ExtResource( 5 )
+centered = false
+
+[node name="puntoTrivia1" type="TouchScreenButton" parent="montanas/montana3"]
+position = Vector2( 366.358, 1089.48 )
+normal = ExtResource( 3 )
+
+[node name="puntoTrivia2" type="TouchScreenButton" parent="montanas/montana3"]
+position = Vector2( 51.565, 993.073 )
+normal = ExtResource( 3 )
+
+[node name="puntoTrivia3" type="TouchScreenButton" parent="montanas/montana3"]
+position = Vector2( 160.962, 756.359 )
+normal = ExtResource( 3 )
+
+[node name="puntoTrivia4" type="TouchScreenButton" parent="montanas/montana3"]
+position = Vector2( 426.361, 687.909 )
+normal = ExtResource( 3 )
+
+[node name="puntoTrivia5" type="TouchScreenButton" parent="montanas/montana3"]
+position = Vector2( 316.999, 414.637 )
+normal = ExtResource( 3 )
+
+[node name="montana4" type="Node2D" parent="montanas"]
+position = Vector2( 2160, 0 )
+
+[node name="fondo" type="Sprite" parent="montanas/montana4"]
+texture = ExtResource( 7 )
+centered = false
+
+[node name="puntoTrivia1" type="TouchScreenButton" parent="montanas/montana4"]
+position = Vector2( 601.114, 1084.36 )
+normal = ExtResource( 3 )
+
+[node name="puntoTrivia2" type="TouchScreenButton" parent="montanas/montana4"]
+position = Vector2( 392.4, 970.76 )
+normal = ExtResource( 3 )
+
+[node name="puntoTrivia3" type="TouchScreenButton" parent="montanas/montana4"]
+position = Vector2( 466.192, 750.734 )
+normal = ExtResource( 3 )
+
+[node name="puntoTrivia4" type="TouchScreenButton" parent="montanas/montana4"]
+position = Vector2( 301.232, 571.185 )
+normal = ExtResource( 3 )
+
+[node name="puntoTrivia5" type="TouchScreenButton" parent="montanas/montana4"]
+position = Vector2( 285.535, 392.162 )
+normal = ExtResource( 3 )
+
+[node name="montana5" type="Node2D" parent="montanas"]
+position = Vector2( 2880, 0 )
+
+[node name="fondo" type="Sprite" parent="montanas/montana5"]
+texture = ExtResource( 8 )
+centered = false
+
+[node name="puntoTrivia1" type="TouchScreenButton" parent="montanas/montana5"]
+position = Vector2( 48.6582, 1077.4 )
+normal = ExtResource( 3 )
+
+[node name="puntoTrivia2" type="TouchScreenButton" parent="montanas/montana5"]
+position = Vector2( 348.625, 997.671 )
+normal = ExtResource( 3 )
+
+[node name="puntoTrivia3" type="TouchScreenButton" parent="montanas/montana5"]
+position = Vector2( 478.61, 802.806 )
+normal = ExtResource( 3 )
+
+[node name="puntoTrivia4" type="TouchScreenButton" parent="montanas/montana5"]
+position = Vector2( 289.273, 646.706 )
+normal = ExtResource( 3 )
+
+[node name="puntoTrivia5" type="TouchScreenButton" parent="montanas/montana5"]
+position = Vector2( 291.535, 392.162 )
+normal = ExtResource( 3 )
+
+[node name="Tween" type="Tween" parent="montanas"]
+
+[node name="nombre_montana" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="nombre_montana"]
+position = Vector2( 360, 100 )
+texture = ExtResource( 10 )
+
+[node name="Label" type="Label" parent="nombre_montana"]
+margin_top = 38.678
+margin_right = 720.0
+margin_bottom = 158.678
+custom_fonts/font = SubResource( 1 )
+text = "Monte Moriah"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="arrows" type="Node2D" parent="."]
+position = Vector2( 0, 200 )
+
+[node name="rightArrow" type="TouchScreenButton" parent="arrows"]
+position = Vector2( 590, 0 )
+normal = ExtResource( 12 )
+
+[node name="leftArrow" type="TouchScreenButton" parent="arrows"]
+position = Vector2( 24, 0 )
+normal = ExtResource( 11 )
+
+[node name="dialogueBackground" type="Node2D" parent="."]
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="dialogueBackground"]
+margin_right = 720.0
+margin_bottom = 1280.0
+color = Color( 0, 0, 0, 0.533333 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="dialogueBackground"]
+anims/dialogue_end = SubResource( 2 )
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="."]
+visible = false
+shape = SubResource( 3 )
+action = "ui_accept"
+
+[node name="LineEdit" type="LineEdit" parent="."]
+visible = false
+margin_left = 149.0
+margin_top = 233.0
+margin_right = 496.0
+margin_bottom = 309.0
+custom_fonts/font = SubResource( 4 )
+text = "Alexander"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="return" type="TextureButton" parent="."]
+margin_left = 15.0
+margin_top = 1175.0
+margin_right = 103.0
+margin_bottom = 1264.0
+rect_pivot_offset = Vector2( 44, 44 )
+texture_normal = ExtResource( 13 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="score" type="HBoxContainer" parent="."]
+margin_left = 291.755
+margin_top = 1189.76
+margin_right = 704.755
+margin_bottom = 1274.76
+alignment = 2
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="score"]
+margin_left = 153.0
+margin_top = 4.0
+margin_right = 413.0
+margin_bottom = 81.0
+custom_fonts/font = SubResource( 5 )
+text = "Puntaje: 40"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="montanas/montana1/puntoTrivia1" to="." method="_on_puntoTrivia1_pressed"]
+[connection signal="pressed" from="montanas/montana1/puntoTrivia2" to="." method="_on_puntoTrivia2_pressed"]
+[connection signal="pressed" from="montanas/montana1/puntoTrivia3" to="." method="_on_puntoTrivia3_pressed"]
+[connection signal="pressed" from="montanas/montana1/puntoTrivia4" to="." method="_on_puntoTrivia4_pressed"]
+[connection signal="pressed" from="montanas/montana1/puntoTrivia5" to="." method="_on_puntoTrivia5_pressed"]
+[connection signal="pressed" from="montanas/montana2/puntoTrivia1" to="." method="_on_puntoTrivia1_pressed"]
+[connection signal="pressed" from="montanas/montana2/puntoTrivia2" to="." method="_on_puntoTrivia2_pressed"]
+[connection signal="pressed" from="montanas/montana2/puntoTrivia3" to="." method="_on_puntoTrivia3_pressed"]
+[connection signal="pressed" from="montanas/montana2/puntoTrivia4" to="." method="_on_puntoTrivia4_pressed"]
+[connection signal="pressed" from="montanas/montana2/puntoTrivia5" to="." method="_on_puntoTrivia5_pressed"]
+[connection signal="pressed" from="montanas/montana3/puntoTrivia1" to="." method="_on_puntoTrivia1_pressed"]
+[connection signal="pressed" from="montanas/montana3/puntoTrivia2" to="." method="_on_puntoTrivia2_pressed"]
+[connection signal="pressed" from="montanas/montana3/puntoTrivia3" to="." method="_on_puntoTrivia3_pressed"]
+[connection signal="pressed" from="montanas/montana3/puntoTrivia4" to="." method="_on_puntoTrivia4_pressed"]
+[connection signal="pressed" from="montanas/montana3/puntoTrivia5" to="." method="_on_puntoTrivia5_pressed"]
+[connection signal="pressed" from="montanas/montana4/puntoTrivia1" to="." method="_on_puntoTrivia1_pressed"]
+[connection signal="pressed" from="montanas/montana4/puntoTrivia2" to="." method="_on_puntoTrivia2_pressed"]
+[connection signal="pressed" from="montanas/montana4/puntoTrivia3" to="." method="_on_puntoTrivia3_pressed"]
+[connection signal="pressed" from="montanas/montana4/puntoTrivia4" to="." method="_on_puntoTrivia4_pressed"]
+[connection signal="pressed" from="montanas/montana4/puntoTrivia5" to="." method="_on_puntoTrivia5_pressed"]
+[connection signal="pressed" from="montanas/montana5/puntoTrivia1" to="." method="_on_puntoTrivia1_pressed"]
+[connection signal="pressed" from="montanas/montana5/puntoTrivia2" to="." method="_on_puntoTrivia2_pressed"]
+[connection signal="pressed" from="montanas/montana5/puntoTrivia3" to="." method="_on_puntoTrivia3_pressed"]
+[connection signal="pressed" from="montanas/montana5/puntoTrivia4" to="." method="_on_puntoTrivia4_pressed"]
+[connection signal="pressed" from="montanas/montana5/puntoTrivia5" to="." method="_on_puntoTrivia5_pressed"]
+[connection signal="tween_completed" from="montanas/Tween" to="." method="_on_Tween_tween_completed"]
+[connection signal="pressed" from="arrows/rightArrow" to="." method="_on_rightArrow_pressed"]
+[connection signal="released" from="arrows/rightArrow" to="." method="_on_rightArrow_released"]
+[connection signal="pressed" from="arrows/leftArrow" to="." method="_on_leftArrow_pressed"]
+[connection signal="released" from="arrows/leftArrow" to="." method="_on_leftArrow_released"]
+[connection signal="animation_finished" from="dialogueBackground/AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
+[connection signal="button_down" from="return" to="." method="_on_return_button_down"]
+[connection signal="button_up" from="return" to="." method="_on_return_button_up"]

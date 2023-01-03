@@ -1,0 +1,28 @@
+{
+	"color": "#ffffffff",
+	"description": "El aventurero mexicano",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1624841734.json",
+	"mirror_portraits": false,
+	"name": "Pipe",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 280,
+	"offset_y": -250,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://recursos/Personajes/Pipe/Pipe - Manos Abajo.png"
+		},
+		{
+			"name": "emocion",
+			"path": "res://recursos/Personajes/Pipe/Pipe - Manos Arriba.png"
+		},
+		{
+			"name": "saludo",
+			"path": "res://recursos/Personajes/Pipe/Pipe - Mano Izquierda Arriba.png"
+		}
+	],
+	"scale": 20
+}

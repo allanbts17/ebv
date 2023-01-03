@@ -1,0 +1,89 @@
+{
+    "1" : {
+	"1" : {
+	"tipo" : "Pareo",
+	"izquierda" : ["Padre", "Hijo", "Valor", "Monte", "Seguidores"],
+	"derecha" : ["Dios", "Jesús", "Esperanza", "Olivos", "Discípulos"]
+	},
+	"2" : {
+	"tipo" : "Ordena la palabra",
+	"pregunta" : "Monte en el que predicó Jesús",
+	"desorden" : "SOLOVI",
+	"orden" : "OLIVOS"
+	}
+    },
+    "2" : {
+	"1" : {
+	"tipo" : "Completa",
+	"pregunta" : "Hay que predicar sobre el ______ de Dios",
+	"opciones" : ["Casa",
+			"Reino",
+			"Poder",
+			"Don"],
+	"respuesta" : 2
+	},
+	"2" : {
+	"tipo" : "Opción múltiple",
+	"pregunta" : "¿Quién es el refugio?",
+	"opciones" : ["Dios",
+			"Discípulos ",
+			"Jesús",
+			"Gente"],
+	"respuesta" : 1
+	}
+    },
+    "3" : {
+	"1" : {
+	"tipo" : "Ordena la palabra",
+	"pregunta" : "La Esperanza es…",
+	"desorden" : "SEJÚS",
+	"orden" : "JESÚS"
+	},
+	"2" : {
+	"tipo" : "Completa",
+	"pregunta" : "Jesús dijo que amemos a nuestros_____",
+	"opciones" : ["Amigos",
+			"Enemigos ",
+			"Padres",
+			"Maestros "],
+	"respuesta" : 2
+	}
+    },
+    "4" : {
+	"1" : {
+	"tipo" : "Opción múltiple",
+	"pregunta" : "¿Cómo le decían a Jesús?",
+	"opciones" : ["Pastor",
+			"Padre",
+			"Discípulo",
+			"Maestro"],
+	"respuesta" : 4
+	},
+	"2" : {
+	"tipo" : "Completa",
+	"pregunta" : "Dios el hizo una promesa a Abraham, que lo iba a poner encima de todas las _________",
+	"opciones" : ["Tierras",
+			"Naciones",
+			"Países",
+			"Ciudades"],
+	"respuesta" : 2
+	}
+    },
+    "5" : {
+	"1" : {
+	"tipo" : "Ordena la palabra",
+	"pregunta" : "Jesús es la…",
+	"desorden" : "PARENAZSE",
+	"orden" : "ESPERANZA"
+	},
+	"2" : {
+	"tipo" : "Opción múltiple",
+	"pregunta" : "¿Qué instrumento usarán los ángeles para anunciar?",
+	"opciones" : ["Trompeta",
+			"Trombón",
+			"Tuba",
+			"Arpa"],
+	"respuesta" : 1
+	}
+    }
+}

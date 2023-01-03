@@ -1,0 +1,592 @@
+[gd_scene load_steps=28 format=2]
+
+[ext_resource path="res://recursos/trivia/trivia fondo.png" type="Texture" id=1]
+[ext_resource path="res://recursos/trivia/trivia 1/trivia pregunta.png" type="Texture" id=2]
+[ext_resource path="res://recursos/trivia/trivia 1/trivia opcion.png" type="Texture" id=3]
+[ext_resource path="res://recursos/trivia/pausa.png" type="Texture" id=4]
+[ext_resource path="res://recursos/fuentes/triviaRespuesta.tres" type="DynamicFont" id=5]
+[ext_resource path="res://recursos/fuentes/triviaPregunta.tres" type="DynamicFont" id=6]
+[ext_resource path="res://recursos/fuentes/Boogaloo-Regular.ttf" type="DynamicFontData" id=7]
+[ext_resource path="res://trivia1.gd" type="Script" id=8]
+[ext_resource path="res://trivia_handle.gd" type="Script" id=9]
+[ext_resource path="res://recursos/Personajes/round/moisesViejo1.png" type="Texture" id=10]
+[ext_resource path="res://trivia2.gd" type="Script" id=11]
+[ext_resource path="res://Ordena.gd" type="Script" id=12]
+[ext_resource path="res://letterButton.tscn" type="PackedScene" id=13]
+[ext_resource path="res://letterButtonBig.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Pareo.gd" type="Script" id=15]
+[ext_resource path="res://palabraPareo.tscn" type="PackedScene" id=16]
+[ext_resource path="res://recursos/principal/return.png" type="Texture" id=17]
+[ext_resource path="res://recursos/trivia/roundEnd.png" type="Texture" id=18]
+[ext_resource path="res://recursos/Personajes/round/elias1.png" type="Texture" id=19]
+[ext_resource path="res://recursos/Personajes/round/moisesJoven1.png" type="Texture" id=20]
+[ext_resource path="res://recursos/Personajes/round/jesus1.png" type="Texture" id=21]
+[ext_resource path="res://recursos/Personajes/round/abraham1.png" type="Texture" id=22]
+
+[sub_resource type="DynamicFont" id=1]
+size = 93
+outline_size = 5
+outline_color = Color( 0.419608, 0.14902, 0.0117647, 1 )
+font_data = ExtResource( 7 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 360, 640 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 70
+outline_size = 4
+outline_color = Color( 0.156863, 0.0509804, 0.0117647, 1 )
+font_data = ExtResource( 7 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 50
+outline_size = 3
+outline_color = Color( 0.156863, 0.0509804, 0.0117647, 1 )
+font_data = ExtResource( 7 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 50
+outline_size = 3
+outline_color = Color( 0.156863, 0.0509804, 0.0117647, 1 )
+font_data = ExtResource( 7 )
+
+[node name="trivia_main" type="Node2D"]
+script = ExtResource( 9 )
+
+[node name="trivia fondo" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+centered = false
+
+[node name="pausa" type="Sprite" parent="."]
+visible = false
+position = Vector2( 79.7258, 1196.72 )
+texture = ExtResource( 4 )
+
+[node name="Escoge" type="Node2D" parent="."]
+visible = false
+script = ExtResource( 8 )
+
+[node name="pregunta" type="Node2D" parent="Escoge"]
+
+[node name="Control" type="Control" parent="Escoge/pregunta"]
+margin_left = 57.0
+margin_top = 184.0
+margin_right = 665.0
+margin_bottom = 616.0
+rect_pivot_offset = Vector2( 304, 216 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="trivia pregunta" type="Sprite" parent="Escoge/pregunta/Control"]
+position = Vector2( 303, 216 )
+texture = ExtResource( 2 )
+
+[node name="pregunta label" type="Label" parent="Escoge/pregunta/Control"]
+margin_left = 82.0
+margin_top = 45.0
+margin_right = 525.0
+margin_bottom = 384.0
+custom_fonts/font = ExtResource( 6 )
+text = "¿Qué es lo que dijo Eduardo acerca del canto?"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="button1" type="Node2D" parent="Escoge"]
+
+[node name="Control" type="Control" parent="Escoge/button1"]
+margin_left = 26.0
+margin_top = 743.0
+margin_right = 340.0
+margin_bottom = 903.0
+rect_pivot_offset = Vector2( 157, 80 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="opcionButton1" type="TouchScreenButton" parent="Escoge/button1/Control"]
+normal = ExtResource( 3 )
+
+[node name="opcion1" type="Label" parent="Escoge/button1/Control"]
+margin_left = 8.3636
+margin_top = 10.318
+margin_right = 297.364
+margin_bottom = 144.318
+custom_fonts/font = ExtResource( 5 )
+text = "Que debe ser más alta"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="button2" type="Node2D" parent="Escoge"]
+
+[node name="Control" type="Control" parent="Escoge/button2"]
+margin_left = 384.0
+margin_top = 743.0
+margin_right = 698.0
+margin_bottom = 903.0
+rect_pivot_offset = Vector2( 157, 80 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="opcionButton2" type="TouchScreenButton" parent="Escoge/button2/Control"]
+normal = ExtResource( 3 )
+
+[node name="opcion2" type="Label" parent="Escoge/button2/Control"]
+margin_left = 11.0
+margin_top = 11.0
+margin_right = 300.0
+margin_bottom = 143.0
+custom_fonts/font = ExtResource( 5 )
+text = "Que resalta en los oídos"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="button3" type="Node2D" parent="Escoge"]
+
+[node name="Control" type="Control" parent="Escoge/button3"]
+margin_left = 26.0
+margin_top = 950.0
+margin_right = 340.0
+margin_bottom = 1110.0
+rect_pivot_offset = Vector2( 157, 80 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="opcionButton3" type="TouchScreenButton" parent="Escoge/button3/Control"]
+normal = ExtResource( 3 )
+
+[node name="opcion3" type="Label" parent="Escoge/button3/Control"]
+margin_left = 9.53516
+margin_top = 11.6541
+margin_right = 298.535
+margin_bottom = 145.654
+custom_fonts/font = ExtResource( 5 )
+text = "Que avanza con muchos decibelios impactando de manera infinita"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="button4" type="Node2D" parent="Escoge"]
+
+[node name="Control" type="Control" parent="Escoge/button4"]
+margin_left = 384.0
+margin_top = 950.0
+margin_right = 698.0
+margin_bottom = 1110.0
+rect_pivot_offset = Vector2( 157, 80 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="opcionButton4" type="TouchScreenButton" parent="Escoge/button4/Control"]
+normal = ExtResource( 3 )
+
+[node name="opcion4" type="Label" parent="Escoge/button4/Control"]
+margin_left = 12.6992
+margin_top = 11.1118
+margin_right = 299.699
+margin_bottom = 146.113
+custom_fonts/font = ExtResource( 5 )
+text = "Que es pecado"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="mensaje" type="Label" parent="Escoge"]
+visible = false
+margin_top = 608.0
+margin_right = 720.0
+margin_bottom = 743.0
+custom_fonts/font = SubResource( 1 )
+text = "¡Correcto!"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer" type="Timer" parent="Escoge"]
+wait_time = 0.1
+
+[node name="selectionWait" type="Timer" parent="Escoge"]
+one_shot = true
+
+[node name="Rostro" type="Node2D" parent="."]
+script = ExtResource( 11 )
+
+[node name="mensaje" type="Label" parent="Rostro"]
+visible = false
+margin_top = 608.0
+margin_right = 720.0
+margin_bottom = 743.0
+custom_fonts/font = SubResource( 1 )
+text = "¡Correcto!"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="pregunta" type="Node2D" parent="Rostro"]
+
+[node name="trivia pregunta" type="Sprite" parent="Rostro/pregunta"]
+position = Vector2( 360, 400 )
+texture = ExtResource( 2 )
+
+[node name="pregunta label" type="Label" parent="Rostro/pregunta"]
+margin_left = 139.0
+margin_top = 235.0
+margin_right = 582.0
+margin_bottom = 561.0
+custom_fonts/font = ExtResource( 6 )
+text = "¿Qué es lo que dijo Eduardo acerca del canto?"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="buttons" type="Node2D" parent="Rostro"]
+position = Vector2( 0, 760 )
+
+[node name="Abraham" type="TouchScreenButton" parent="Rostro/buttons"]
+position = Vector2( 49, 6 )
+normal = ExtResource( 22 )
+
+[node name="Jesus" type="TouchScreenButton" parent="Rostro/buttons"]
+position = Vector2( 149, 211 )
+normal = ExtResource( 21 )
+
+[node name="MoisesJoven" type="TouchScreenButton" parent="Rostro/buttons"]
+position = Vector2( 381, 211 )
+normal = ExtResource( 20 )
+
+[node name="MoisesViejo" type="TouchScreenButton" parent="Rostro/buttons"]
+position = Vector2( 265, 6 )
+normal = ExtResource( 10 )
+
+[node name="Elias" type="TouchScreenButton" parent="Rostro/buttons"]
+position = Vector2( 481, 6 )
+normal = ExtResource( 19 )
+
+[node name="selectionWait" type="Timer" parent="Rostro"]
+one_shot = true
+
+[node name="Ordena" type="Node2D" parent="."]
+visible = false
+script = ExtResource( 12 )
+
+[node name="pregunta" type="Node2D" parent="Ordena"]
+
+[node name="trivia pregunta" type="Sprite" parent="Ordena/pregunta"]
+position = Vector2( 360, 400 )
+texture = ExtResource( 2 )
+
+[node name="pregunta label" type="Label" parent="Ordena/pregunta"]
+margin_left = 139.0
+margin_top = 235.0
+margin_right = 582.0
+margin_bottom = 561.0
+custom_fonts/font = ExtResource( 6 )
+text = "¿Qué es lo que dijo Eduardo acerca del canto?"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="mensaje" type="Label" parent="Ordena"]
+margin_top = 608.0
+margin_right = 720.0
+margin_bottom = 743.0
+custom_fonts/font = SubResource( 1 )
+text = "¡Correcto!"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="letrasOrdenadas" type="HBoxContainer" parent="Ordena"]
+margin_top = 740.0
+margin_right = 720.0
+margin_bottom = 812.0
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control" parent="Ordena/letrasOrdenadas" instance=ExtResource( 13 )]
+margin_left = 330.0
+margin_right = 390.0
+
+[node name="letrasDesordenadas" type="VBoxContainer" parent="Ordena"]
+margin_top = 890.0
+margin_right = 720.0
+margin_bottom = 1088.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="fila1" type="HBoxContainer" parent="Ordena/letrasDesordenadas"]
+margin_right = 720.0
+margin_bottom = 97.0
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control" parent="Ordena/letrasDesordenadas/fila1" instance=ExtResource( 14 )]
+margin_left = 318.0
+margin_right = 401.0
+
+[node name="fila2" type="HBoxContainer" parent="Ordena/letrasDesordenadas"]
+margin_top = 101.0
+margin_right = 720.0
+margin_bottom = 198.0
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control" parent="Ordena/letrasDesordenadas/fila2" instance=ExtResource( 14 )]
+modulate = Color( 0.164706, 0.854902, 0.12549, 1 )
+margin_left = 318.0
+margin_right = 401.0
+
+[node name="incorrectWait" type="Timer" parent="Ordena"]
+one_shot = true
+
+[node name="correctWait" type="Timer" parent="Ordena"]
+wait_time = 0.2
+one_shot = true
+
+[node name="Pareo" type="Node2D" parent="."]
+visible = false
+position = Vector2( 0, -120 )
+script = ExtResource( 15 )
+
+[node name="pregunta" type="Node2D" parent="Pareo"]
+
+[node name="trivia pregunta" type="Sprite" parent="Pareo/pregunta"]
+position = Vector2( 360, 400 )
+texture = ExtResource( 2 )
+
+[node name="pregunta label" type="Label" parent="Pareo/pregunta"]
+margin_left = 139.0
+margin_top = 235.0
+margin_right = 582.0
+margin_bottom = 561.0
+custom_fonts/font = ExtResource( 6 )
+text = "¿Qué es lo que dijo Eduardo acerca del canto?"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="mensaje" type="Label" parent="Pareo"]
+margin_top = 608.0
+margin_right = 720.0
+margin_bottom = 743.0
+custom_fonts/font = SubResource( 1 )
+text = "¡Correcto!"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="izquierda" type="VBoxContainer" parent="Pareo"]
+margin_top = 750.0
+margin_right = 360.0
+margin_bottom = 1280.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="palabra" parent="Pareo/izquierda" instance=ExtResource( 16 )]
+modulate = Color( 0.172549, 1, 0, 1 )
+
+[node name="derecha" type="VBoxContainer" parent="Pareo"]
+margin_left = 360.0
+margin_top = 750.0
+margin_right = 720.0
+margin_bottom = 1280.0
+rect_pivot_offset = Vector2( -1080.12, 181 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="incorrectWait" type="Timer" parent="Pareo"]
+wait_time = 0.4
+one_shot = true
+
+[node name="correctWait" type="Timer" parent="Pareo"]
+wait_time = 0.8
+one_shot = true
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="."]
+shape = SubResource( 2 )
+action = "ui_accept"
+
+[node name="return" type="TextureButton" parent="."]
+margin_left = 18.0
+margin_top = 1170.0
+margin_right = 106.0
+margin_bottom = 1259.0
+rect_pivot_offset = Vector2( 44, 44 )
+texture_normal = ExtResource( 17 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="nivelTerminado" type="Node2D" parent="."]
+visible = false
+
+[node name="Sprite" type="Sprite" parent="nivelTerminado"]
+position = Vector2( 360, 640 )
+texture = ExtResource( 18 )
+
+[node name="sucess" type="Node2D" parent="nivelTerminado"]
+visible = false
+
+[node name="victoria" type="Label" parent="nivelTerminado/sucess"]
+margin_left = 236.894
+margin_top = 458.353
+margin_right = 460.894
+margin_bottom = 543.353
+custom_fonts/font = SubResource( 3 )
+text = "¡Victoria!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="record" type="Label" parent="nivelTerminado/sucess"]
+margin_left = 184.0
+margin_top = 570.388
+margin_right = 524.0
+margin_bottom = 655.388
+custom_fonts/font = SubResource( 3 )
+text = "Récord: 0"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="score" type="Label" parent="nivelTerminado/sucess"]
+margin_left = 184.0
+margin_top = 651.205
+margin_right = 524.0
+margin_bottom = 736.205
+custom_fonts/font = SubResource( 3 )
+text = "Puntaje: 500"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="fail" type="Node2D" parent="nivelTerminado"]
+
+[node name="derrota" type="Label" parent="nivelTerminado/fail"]
+margin_left = 236.894
+margin_top = 458.353
+margin_right = 460.894
+margin_bottom = 543.353
+custom_fonts/font = SubResource( 3 )
+text = "Ups..."
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="intenta" type="Label" parent="nivelTerminado/fail"]
+margin_left = 178.0
+margin_top = 570.0
+margin_right = 528.0
+margin_bottom = 631.0
+custom_fonts/font = SubResource( 4 )
+text = "Intenta de nuevo"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="score" type="Label" parent="nivelTerminado/fail"]
+margin_left = 186.378
+margin_top = 687.622
+margin_right = 522.378
+margin_bottom = 748.622
+custom_fonts/font = SubResource( 5 )
+text = "Puntaje: 450"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="min" type="Label" parent="nivelTerminado/fail"]
+margin_left = 184.0
+margin_top = 637.0
+margin_right = 521.0
+margin_bottom = 698.0
+custom_fonts/font = SubResource( 5 )
+text = "Mínimo: 500"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="nivelTerminado"]
+shape = SubResource( 2 )
+
+[connection signal="pressed" from="Escoge/button1/Control/opcionButton1" to="Escoge" method="_on_opcionButton1_pressed"]
+[connection signal="pressed" from="Escoge/button2/Control/opcionButton2" to="Escoge" method="_on_opcionButton2_pressed"]
+[connection signal="pressed" from="Escoge/button3/Control/opcionButton3" to="Escoge" method="_on_opcionButton3_pressed"]
+[connection signal="pressed" from="Escoge/button4/Control/opcionButton4" to="Escoge" method="_on_opcionButton4_pressed"]
+[connection signal="timeout" from="Escoge/Timer" to="." method="_on_Timer_timeout"]
+[connection signal="timeout" from="Escoge/selectionWait" to="Escoge" method="_on_selectionWait_timeout"]
+[connection signal="pressed" from="Rostro/buttons/Abraham" to="Rostro" method="_on_Abraham_pressed"]
+[connection signal="pressed" from="Rostro/buttons/Jesus" to="Rostro" method="_on_Jess_pressed"]
+[connection signal="pressed" from="Rostro/buttons/MoisesJoven" to="Rostro" method="_on_MoissJoven_pressed"]
+[connection signal="pressed" from="Rostro/buttons/MoisesViejo" to="Rostro" method="_on_MoissViejo_pressed"]
+[connection signal="pressed" from="Rostro/buttons/Elias" to="Rostro" method="_on_Elas_pressed"]
+[connection signal="timeout" from="Rostro/selectionWait" to="Rostro" method="_on_selectionWait_timeout"]
+[connection signal="timeout" from="Ordena/incorrectWait" to="Ordena" method="_on_selectionWait_timeout"]
+[connection signal="timeout" from="Ordena/correctWait" to="Ordena" method="_on_selectionWait_timeout"]
+[connection signal="timeout" from="Pareo/incorrectWait" to="Pareo" method="_on_incorrectWait_timeout"]
+[connection signal="timeout" from="Pareo/correctWait" to="Pareo" method="_on_correctWait_timeout"]
+[connection signal="button_down" from="return" to="." method="_on_return_button_down"]
+[connection signal="button_up" from="return" to="." method="_on_return_button_up"]
+[connection signal="released" from="nivelTerminado/TouchScreenButton" to="." method="_on_TouchScreenButton_released"]

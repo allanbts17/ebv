@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/saludoPipe.wav-dbcb81b1424d17c5d315ace331b07777.sample"
+
+[deps]
+
+source_file="res://recursos/sfx/saludoPipe.wav"
+dest_files=[ "res://.import/saludoPipe.wav-dbcb81b1424d17c5d315ace331b07777.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

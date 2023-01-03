@@ -1,0 +1,89 @@
+{
+    "1" : {
+	"1" : {
+	"tipo" : "Completa",
+	"pregunta" : "Moisés subía al monte para escuchar la voz de_____",
+	"opciones" : ["Pueblo",
+			"Josué",
+			"Faraón",
+			"Dios"],
+	"respuesta" : 4
+	},
+	"2" : {
+	"tipo" : "Ordena la palabra",
+	"pregunta" : "¿Qué valor ejercemos cuando obedecemos a DIOS?",
+	"desorden" : "MARO",
+	"orden" : "AMOR"
+	}
+    },
+    "2" : {
+	"1" : {
+	"tipo" : "Opción múltiple",
+	"pregunta" : "¿Cómo se sintió el pueblo en el desierto?",
+	"opciones" : ["Inquieto ",
+			"Alegre",
+			"Enojado",
+			"Cansado"],
+	"respuesta" : 1
+	},
+	"2" : {
+	"tipo" : "Pareo",
+	"izquierda" : ["Dios", "Líder", "Valor", "Monte", "Pueblo"],
+	"derecha" : ["Mandamientos", "Moisés", "Amor", "Sinaí", "Pacto"]
+	}
+    },
+    "3" : {
+	"1" : {
+	"tipo" : "Ordena la palabra",
+	"pregunta" : "¿A qué monté subió Moisés para hablar con Dios?",
+	"desorden" : "NÍSAI",
+	"orden" : "SINAÍ"
+	},
+	"2" : {
+	"tipo" : "Opción múltiple",
+	"pregunta" : "¿Con quién hace pacto el pueblo de Israel?",
+	"opciones" : ["Moisés",
+			"Dios",
+			"Faraón",
+			"Josué"],
+	"respuesta" : 2
+	}
+    },
+    "4" : {
+	"1" : {
+	"tipo" : "Opción múltiple",
+	"pregunta" : "¿Qué promete Dios si cumplimos el pacto?",
+	"opciones" : ["Vivir",
+			"Regalo",
+			"Muerte",
+			"Amor"],
+	"respuesta" : 1
+	},
+	"2" : {
+	"tipo" : "Completa",
+	"pregunta" : "¿Qué somos para Dios?",
+	"opciones" : ["Amor",
+			"Pacto",
+			"Tesoro",
+			"Pueblo"],
+	"respuesta" : 3
+	}
+    },
+    "5" : {
+	"1" : {
+	"tipo" : "Ordena la palabra",
+	"pregunta" : "¿Cuál era la señal de que estaban en el lugar prometido?",
+	"desorden" : "MAJI",
+	"orden" : "JAIM"
+	},
+	"2" : {
+	"tipo" : "Opción múltiple",
+	"pregunta" : "¿Cuántos meses tenían desde que salieron de Egipto?",
+	"opciones" : ["3",
+			"1",
+			"8",
+			"2"],
+	"respuesta" : 1
+	}
+    }
+}
